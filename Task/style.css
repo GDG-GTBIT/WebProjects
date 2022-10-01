@@ -1,0 +1,408 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+}
+.uppercontainer{
+    height:100vh;
+    background-image: url(images/1.jpg);
+    background-size:cover;
+    position: relative;
+    color: white;
+}
+.navbar{
+    display:flex;
+    height:4rem;
+}
+.company{
+    margin-left:18%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:7%;
+    font-size:xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.routes{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-left:30%;
+    width:37%;
+}
+.routes div:hover{
+    color:darkblue;
+}
+.heading{
+    margin-top:7rem;
+    margin-left:15rem;
+    width:25vw;
+}
+.para{
+    margin-left:15rem;
+    height:4rem;
+    font-size: 1.2rem;
+    width:30vw;
+    margin-top:1rem;
+}
+.btn{
+    display:flex;
+    margin-left:14rem;
+    margin-top:1rem;
+    width:20vw;
+    justify-content: space-around;
+    height:2.5rem;
+}
+.btn1,.btn2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    background:yellow;
+    color:black;
+}
+.btn1:hover,.btn2:hover{
+    background:purple;
+    color:white;
+}
+.icnleft,.icnright{
+    position:absolute;
+    top:50vh;
+}
+.icnleft{
+    left:1rem;
+}
+.icnright{
+    right:1rem;
+}
+.pagination{
+    position:absolute;
+    top:36rem;
+    left:47.5%;
+}
+.welcomehead{
+    text-align: center;
+    margin-top: 4rem;
+    height:4rem;
+}
+.welcometext{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:3rem;
+    height:10rem;
+    width: 60%;
+    margin-left:20%;
+}
+
+.weltext{
+    width:50%;
+    font-size:1.8rem;
+}
+.welcards{
+    display:flex;
+    justify-content: space-between;
+    margin-left:25%;
+    width:50%;
+    margin-top:4rem;
+    height:18rem;
+}
+.welcard{
+    height:100%;
+    width:30%;
+}
+.welicn{
+    height:4rem;
+    width:4rem;
+    border-radius: 50%;
+    background:purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    margin-left: calc( ( 100% - 4rem ) / 2 );
+}
+.weltitle{
+    margin-top:1rem;
+    display:flex;
+    justify-content: center;
+}
+.welcontent{
+    margin-top:1rem;
+    text-align: center;
+    color:grey;
+}
+.welcard .btn1{
+    width:8rem;
+    margin-top: 1rem;
+    height:2.5rem;
+    margin-left: calc( ( 100% - 8rem ) / 2 ); 
+}
+hr{
+    margin-top:1rem;
+    width:50%;
+    margin-left:25%;
+}
+.projects{
+    height:37rem;
+}
+.projhead{
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+}
+
+.projcontainer{
+    margin-top: 0rem;
+    display:flex;
+    height:30rem;
+}
+.project{
+    width:25%;
+    height:100%;
+    background-color: rgba(139, 138, 138, 0.157);
+}
+.projimage{
+    height:60%;
+    width:100%;
+}
+.pimg{
+    height:100%;
+    width:100%;
+    object-fit: fill;
+}
+.projname{
+    margin-top: 2rem;
+    padding-left:2rem;
+}
+.projtext{
+    margin-top: 1rem;
+    padding-left:2rem;
+    color:grey;
+}
+.projbtn{
+    background:white;
+    width:60%;
+    margin-left:2rem;
+    margin-top:1rem;
+    height:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projbtn:hover{
+    background:purple;
+}
+.pricing{
+    display:flex;
+    justify-content: center;
+}
+.pricingcontainer{
+    display:flex;
+    height:15rem;
+    width:50%;
+    margin-top:1rem;
+    margin-left:25%;
+}
+.pricecard{
+    width:33%;
+}
+p{
+    text-align: center;
+}
+.prhead{
+    text-align: center;
+    font-weight: bold;
+}
+.prmode{
+    color:grey;
+}
+.buybtn{
+    background-color: yellow;
+    width:60%;
+    height:1.4rem;
+    margin-left:20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buybtn:hover{
+    background-color: purple;
+}
+
+.vidcontainer{
+margin-top:3rem;
+height:30rem;
+padding-top:3rem;
+background: rgb(130, 98, 182);
+color:white;
+}
+
+.vidtext{
+    text-align:center;
+}
+
+.vidouter{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:2rem;
+}
+.teamcontainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:3rem;
+}
+.team{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    width:50rem;
+}
+.teamhead{
+    text-align: center;
+}
+.teamcard{
+    height:17rem;
+    width:10rem;
+    margin:2rem;
+}
+.teamimg{
+    height:60%;
+}
+.teamimginner{
+    height:100%;
+    width:100%;
+    border-radius: 50%;
+}
+.lifeimg{
+    height:25rem;
+    width:40rem;
+}
+.lifecontainer{
+    /* text-align:center; */
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top:4rem;
+    height:45rem;
+    background-color: rgb(231, 228, 228);
+    padding-top:2rem;
+}
+.imgcontainer{
+    display:flex;
+    justify-content: space-evenly;
+    height:8rem;
+    margin-top:2rem;
+    width:42rem;
+}
+.imgcontainer img{
+    height:100%;
+    width:18%;
+}
+.activeimg{
+    border:3px blue solid;
+}
+.newsletter{
+    height:20rem;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL0e6cjb3Iqnu34L6ci9p_rW5BFladqgReXA&usqp=CAU");
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:2rem;   
+    color:white;
+}
+.addemail{
+    display:flex;
+    margin-top:1rem;
+}
+.enteremail{
+    width:20rem;
+}
+.addemail .btn1{
+    width:6rem;
+    height:3rem;
+}
+.blog{
+   text-align:center;
+   margin-top:1rem;
+}
+.blog .welcards{
+    height:25rem;
+    width:45rem;
+    margin-top:3rem;
+    margin-bottom:4rem;
+}
+.blog .welcards .welcard{
+    height:25rem;
+    width:30%;
+}
+.welimg{
+    height:8rem;
+    width:100%;
+}
+.blog .welcards .welcard .weltitle{
+    font-size:1.2rem;
+}
+.googlemap{
+    height:30rem;
+    width:50vw;
+}
+.contact{
+    display:flex;
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    width:15rem;
+}
+
+.contactform{
+    padding-left:3rem;
+    background:rgb(240, 240, 120);
+    width:50vw;
+}
+.conttext{
+    margin-top:1rem;
+}
+.continp{
+    margin-top:0.2rem;
+    height:2rem;
+}
+.conttextarea{
+    height:5rem;
+}
+.submit{
+    margin-top:1rem;
+    height:2rem;
+    background:rgb(100, 38, 100);
+    color:white;
+}
+.submit:hover{
+    background:rgb(150, 150, 88);
+}
+.footer{
+    display:flex;
+    justify-content:space-evenly;
+    width:40rem;
+    height:12rem;
+    margin-left:calc( ( 100vw - 40rem)/2);
+    margin-top:3rem;
+    text-align:center;
+}
+.foot{
+    width:30%;
+}
+.footicn{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-evenly;
+    width:8rem;
+    margin-left:2rem;
+}
+i{
+    margin:0.2rem;
+}
