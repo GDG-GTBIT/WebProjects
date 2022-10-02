@@ -1,0 +1,25 @@
+.App {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  background-size: 100% ;
+  text-align: center;
+  background-color: #282c34;
+  
+}
+
+.time{
+  
+  transform: translateY(350px);
+    position: absolute;
+    
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+
