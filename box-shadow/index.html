@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="shortcut icon"
+        href="https://cdn0.iconfinder.com/data/icons/interface-tools-starter-colored/48/JD-02-512.png"
+        type="image/x-icon">
+    <title>Color Chooser</title>
+</head>
+
+<body>
+    <h1>Box Shadow Generator</h1>
+
+    <div class="container">
+        <div class="row">
+            <label for="">Red</label>
+            <input type="range" min="0" max="255" value="0" class="slider" id="myRange">
+            <label for="">Green</label>
+            <input type="range" min="0" max="255" value="0" class="slider" id="myRange1">
+            <label for="">Blue</label>
+            <input type="range" min="0" max="255" value="0" class="slider" id="myRange2">
+            <label for="">Shadow Color Opacity</label>
+            <input type="range" min="0" step="0.01" max="1" value="0" class="slider" id="myRange3">            
+        </div>
+        <div class="row">
+            <label for="">Horizontal Shadow Length</label>
+            <input type="range" min="-200" max="200" value="0" class="slider" id="myRange4">
+            <label for="">Vertical Shadow Length</label>
+            <input type="range" min="-200" max="200" value="0" class="slider" id="myRange5">
+            <label for="">Blur Radius</label>
+            <input type="range" min="0" max="400" value="0" class="slider" id="myRange6">
+            <label for="">Spread Radius</label>
+            <input type="range" min="-200" max="200" value="0" class="slider" id="myRange7">
+        </div>
+    </div>
+
+    <div class="second">
+        <p id="finalColor1">box-shadow: <div id="finalColor"><span id="demo">10px</span> <span id="demo1">10px</span> <span id="demo2">10px</span> <span id="demo3">4px</span> <span>rgba(<span id="demo4">130</span>,<span id="demo5">255</span>,<span id="demo6">120</span>,<span id="demo7">0.40</span>)</span>;</div></p>
+        <p id="copiedColor"></p>
+        <div class="coloredbox" id="coloredbox"></div>
+        <p id="right">Created By @ Aryan Garg &copy; 2022</p>
+    </div>
+</body>
+<script type="text/javascript" src="./main.js"></script>
+
+</html>
