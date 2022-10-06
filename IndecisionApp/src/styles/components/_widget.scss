@@ -1,0 +1,43 @@
+.widget-header{
+    background: $blue;
+    color:$off-white;
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-between;
+    // This will help the elements to distribute all the space between them
+    flex-wrap: wrap;
+    padding: $m-size;
+}
+
+
+.widget-header__title{
+    margin: 0;
+}
+
+// .widget-header h3{
+//     margin: 0;
+// }
+
+
+.widget{
+    background: $light-blue;
+    color: $off-white;
+}
+
+.widget__option{
+    border-bottom: 1px lighten($light-blue,10%) solid;
+    padding: $s-size;
+    display: flex;
+    justify-content: space-between;
+    word-break: break-all;
+
+}
+
+.OptionAvaialability{
+    padding: $m-size;
+    border-bottom: 1px lighten($light-blue,10%) solid;
+    display: flex;
+    justify-content: space-around;
+}
+
+

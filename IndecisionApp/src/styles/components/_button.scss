@@ -1,0 +1,55 @@
+
+.action__btn{
+
+    background: $purple;
+
+    width: 100%;
+   padding: 2.4rem;
+    border: none;
+    border-bottom: .6rem solid darken($purple,10%);
+    border-right: .6rem solid darken($purple,10%);
+    color: white;
+    font-size: $l-size;
+    font-weight: bold;
+    margin-bottom: $xl-size;
+
+    // darken is a function which darkens the colour provided
+}
+
+.action__btn:disabled{
+    opacity: 0.5;
+}
+
+
+
+.btn{
+
+    background: $purple;
+    padding: $m-size;
+    color: white;
+    border: none;
+    border-bottom: 0.3rem solid darken($purple,10%);
+    font-weight: 500;
+
+}
+
+
+.button--link{
+    background: none;
+    padding: 0;
+    border: none;
+    color: $off-white;
+
+
+}
+
+
+// In case of modifiers the underscore are replaced by hyphen
+
+
+@media (max-width:$desktop-breakpoint){
+    .action__btn{
+        margin-bottom: $m-size;
+    }
+}
+

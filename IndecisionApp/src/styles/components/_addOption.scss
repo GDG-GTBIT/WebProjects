@@ -1,0 +1,55 @@
+.add-option-form-tag{
+    padding-bottom: $m-size;
+}
+.add-option-form{
+    display: flex;
+    justify-content: space-between;
+    padding: $l-size $m-size;
+    flex-wrap: wrap;
+    
+}
+
+.add-option-form input{
+    border: none;
+    border-bottom: 0.3rem darken($dark-blue,10%) solid;
+    margin: 7px;
+    font-size: 2rem;
+    color: $off-white;
+    font-weight: bold;
+    background: $dark-blue;
+    flex-grow: 1;
+    // This will enable the element to take the remaining space
+    text-align: center;
+}
+
+form .add-option-error{
+
+    color: $off-white;
+    font-style: italic;
+    padding: 0 $m-size;
+    margin: $s-size 0;
+
+}
+
+
+@media (max-width:$desktop-breakpoint){
+
+    // This will conditions will be applied if the width of the device is less than 45rem
+    // This is a CSS feature
+
+    *{
+        color: yellow;
+    }
+
+    .add-option-form{
+        display: flex;
+        // justify-content: space-between;
+        flex-direction: column;
+        padding: $l-size $m-size;
+        flex-wrap: wrap;
+        
+    }
+    
+
+
+}

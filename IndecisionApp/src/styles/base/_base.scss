@@ -1,0 +1,29 @@
+// We beginned with a underscore sign because this denotes this contains partial styles with element selectors and styles
+$brandColor:blueviolet;
+
+html{
+    font-size: 62.5%;
+
+    // This is done to because 1 px will become 62.5% of its value that is 0.625px and now 1 rem will be 10px which was initially 16px
+}
+
+
+body{
+    font-family: Helvetica, Arial , sans-serif;
+    color: $brandColor;
+    font-size: $m-size;
+}
+
+.main-app{
+    background: $dark-blue;
+    padding-bottom: 5rem;
+}
+
+button{
+    cursor: pointer;
+}
+// This will make the pointer turn into a hand whenever the pointer comes on the button
+
+button:disabled{
+    cursor: default;
+}
