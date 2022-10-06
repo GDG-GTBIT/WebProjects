@@ -1,0 +1,41 @@
+-
+  a: 1
+  b: 
+    - hello
+    - world
+    - Good Morning
+  pair:  !!pairs
+    - status : ok
+
+
+# This is the response from the server
+-
+  status : ok
+  results : 1
+  data : 
+    message : "Data found"
+
+- 
+  status : fail
+  message : Data not found
+
+- 
+  status codes : [200,201,404,501,502,503,504]
+
+-
+  status code : 200
+  meaning : Data successfully found and transferred
+
+-
+  status code : 201
+  meaning : Data successfully added to the server
+
+-
+  status code : 404
+  meaning : File not Found
+
+-
+  status code : 501
+  meaning : Some error in the server
+
+

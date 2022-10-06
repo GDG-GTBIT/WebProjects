@@ -1,0 +1,44 @@
+.header{
+    background: $off-black;
+    color: violet;
+    h1{
+        // In this we choose the nested selector
+
+        padding-left: 0.1rem;
+    }
+    margin-bottom: $xl-size;
+    padding: $spacing 0;
+
+}
+
+
+// This is BEM naming convention that is block element modifier
+// block is the main parent and the elements are the children 
+
+.header__title{
+    color:white;
+    margin: 0;
+}
+
+
+.header__subtitle{
+
+    color: $off-white;
+    font-weight: 500;
+    // This is used to select the thickness of the font
+    margin: 0;
+}
+
+
+
+.organization__name{
+    color: violet;
+}
+
+
+@media (max-width:$desktop-breakpoint){
+    .header{
+        margin-bottom: $m-size;
+    }
+
+}
