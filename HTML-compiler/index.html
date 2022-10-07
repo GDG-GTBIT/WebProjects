@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        body {
+            background-color: #333;
+        }
+
+        textarea {
+            background-color: #333;
+            border: none;
+            color: white;
+            box-shadow: 5px 5px 10px wheat;
+            outline: none;
+            width: 45vw;
+        }
+
+        textarea:hover {
+            box-shadow: 5px 5px 10px yellow;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 2%;
+        }
+
+        .container {
+            display: flex;
+            margin: auto;
+            justify-content: space-evenly;
+        }
+
+        iframe {
+            width: 45vw;
+            height: 85vh;
+            box-shadow: 5px 5px 10px wheat;
+        }
+
+        button {
+            padding: 0.5rem 2rem;
+            border: none;
+            background-color: teal;
+            color: white;
+            font-weight: bolder;
+        }
+
+        button:hover {
+            font-weight: lighter;
+        }
+    </style>
+    <title>HTML Compiler</title>
+</head>
+
+<body>
+    <nav>
+        <h2>HTML Compiler</h2>
+        <button onclick=Run()>Run</button>
+    </nav>
+    <div class="container">
+        <textarea id="code" placeholder="HTML"></textarea>
+        <iframe id="compiled" frameborder="0"></iframe>
+    </div>
+    <script>
+        function Run() {
+            const code = document.getElementById('code')
+            const compile = document.getElementById('compiled').contentWindow.document;
+            compile.open();
+            compile.write(code.value);
+            compile.close();
+        }
+    </script>
+</body>
+
+</html>
