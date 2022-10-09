@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Microsoft Clone</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <div class="navbar flex justify-between items-center p-4">
+        <div class="flex justify-center items-center md:order-2">
+          <div
+            id="icon"
+            class="hamburger inline-block p-3 cursor-pointer md:hidden"
+          >
+            <div class="line h-0.5 w-5 my-1 bg-black"></div>
+            <div class="line h-0.5 w-5 my-1 bg-black"></div>
+            <div class="line h-0.5 w-5 my-1 bg-black"></div>
+          </div>
+          <div class="search md:hidden mx-4">
+            <img class="w-6" src="search.svg" alt="searchicon" />
+          </div>
+        </div>
+
+        <div class="logo text-center flex md:order-1">
+          <div class="p-4 w-44"><img src="images/RE1Mu3b.png" alt="" /></div>
+          <div
+            class="navitems absolute md:static w-fit my-5 md:w-auto bg-gray-200 md:bg-white inset-0 md:flex md:mx-4 md:space-x-8 -translate-x-96 md:translate-x-0"
+          >
+            <div
+              class="items hover:underline hover:decoration-3 cursor-pointer"
+            >
+              Microsoft 365
+            </div>
+            <div
+              class="items hover:underline hover:decoration-3 cursor-pointer"
+            >
+              Office
+            </div>
+            <div
+              class="items hover:underline hover:decoration-3 cursor-pointer"
+            >
+              Windows
+            </div>
+            <div
+              class="items hover:underline hover:decoration-3 cursor-pointer"
+            >
+              Surface
+            </div>
+            <div
+              class="items hover:underline hover:decoration-3 cursor-pointer"
+            >
+              Xbox
+            </div>
+            <div
+              class="items hover:underline hover:decoration-3 cursor-pointer"
+            >
+              Support
+            </div>
+          </div>
+        </div>
+        <div class="cart text-center md:order-3 flex">
+          <div
+            class="search hidden mx-2 md:block hover:underline hover:decoration-3 cursor-pointer"
+          >
+            All Microsoft
+          </div>
+          <img
+            class="w-6 mx-4 hidden md:block"
+            src="search.svg"
+            alt="searchicon"
+          />
+          <div class="flex gap-2">
+            <img class="w-6 h-6" src="images/cart.png" alt="" />
+            <img class="w-6 h-6" src="images/account.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="hmenu"
+        class="hamburger hidden bg-gray-150 h-fit gap-6 md:hidden"
+      >
+        <div class="mx-4 my-1 font-thin text-sm border-b-indigo-100">
+          Microsoft 365
+        </div>
+        <div class="mx-4 my-1 font-thin text-sm border-b-indigo-100">
+          Office
+        </div>
+        <div class="mx-4 my-1 font-thin text-sm border-b-indigo-100">
+          Windows
+        </div>
+        <div class="mx-4 my-1 font-thin text-sm border-b-indigo-100">
+          Surface
+        </div>
+        <div class="mx-4 my-1 font-thin text-sm border-b-indigo-100">Xbox</div>
+        <div class="mx-4 my-1 font-thin text-sm border-b-indigo-100">
+          Support
+        </div>
+        <div class="mx-4 my-1 font-thin text-sm border-b-indigo-100">
+          Software
+        </div>
+        <div class="mx-4 my-1 font-thin text-sm border-b-indigo-100">
+          PC's & Devices
+        </div>
+        <div class="mx-4 my-1 font-thin text-sm border-b-indigo-100">
+          Entertainment
+        </div>
+        <div class="mx-4 my-1 font-thin text-sm border-b-indigo-100">
+          Business
+        </div>
+        <div class="mx-4 my-1 font-thin text-sm border-b-indigo-100">
+          Developer & IT
+        </div>
+        <div class="mx-4 my-1 font-thin text-sm border-b-indigo-100">Other</div>
+        <div class="mx-4 my-1 font-thin text-sm border-b-indigo-100">
+          View Sitemap
+        </div>
+      </div>
+
+      <div class="hero flex flex-col-reverse md:flex-row bg-[#f2f2f2] mx-2">
+        <div
+          class="left flex flex-col justify-center items-center md:items-baseline py-12"
+        >
+          <h1 class="text-2xl font-medium mx-5 md:text-4xl">Surface Pro 8</h1>
+          <p class="w-3/4 mx-5 text-center md:text-left">
+            Do more with a larger 13-inch touchscreen, faster connections and
+            extra speed. Now available with Windows 11.
+          </p>
+          <button
+            class="text-white bg-black px-5 py-4 my-6 mx-5 text-2xl font-semibold"
+          >
+            Learn More >
+          </button>
+        </div>
+        <div class="right">
+          <img src="images/RWKHu9.webp" alt="surfacepro8" />
+        </div>
+      </div>
+
+      <div
+        class="promoicons m-8 flex flex-col md:flex-row md:justify-center md:gap-16"
+      >
+        <div class="item flex items-center mx-4 space-x-2 my-4 md:flex-col">
+          <img src="images/icon1.png" alt="" />
+          <div class="font-semibold hover:underline cursor-pointer">
+            Choose your Microsoft 365
+          </div>
+        </div>
+        <div class="item flex items-center mx-4 space-x-2 my-4 md:flex-col">
+          <img src="images/icon2.webp" alt="" />
+          <div class="font-semibold hover:underline cursor-pointer">
+            Explore Surface devices
+          </div>
+        </div>
+        <div class="item flex items-center mx-4 space-x-2 my-4 md:flex-col">
+          <img src="images/icon3.png" alt="" />
+          <div class="font-semibold hover:underline cursor-pointer">
+            Buy Xbox Games
+          </div>
+        </div>
+        <div class="item flex items-center mx-4 space-x-2 my-4 md:flex-col">
+          <img src="images/icon4.webp" alt="" />
+          <div class="font-semibold hover:underline cursor-pointer">
+            Get Windows 11
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="section1 flex flex-col my-6 md:flex-row items-center justify-center"
+      >
+        <div class="elements flex flex-col gap-2 mx-2 my-4 item-center">
+          <img class="w-80" src="images/sectionimg1.webp" alt="sectionimg1" />
+          <h3 class="font-medium text-xl">Surface Laptop 4</h3>
+          <p class="max-w-[350px]">
+            Do it all with a perfect balance of sleek, ultra-thin design,
+            multitasking speed and improved performance.
+          </p>
+          <a
+            href="https://www.microsoft.com/en-in/surface/devices/surface-laptop-4?icid=mscom_marcom_CPH1a_SurfaceLaptop4"
+            class="text-blue-500 hover:underline"
+            >Shop Now ></a
+          >
+        </div>
+        <div class="elements flex flex-col gap-2 mx-2 my-4 item-center">
+          <img class="w-80" src="images/sectionimg2.webp" alt="sectionimg2" />
+          <h3 class="font-medium text-xl">Surface Laptop Studio</h3>
+          <p class="max-w-[350px]">
+            Flex your creative muscle on the most powerful Surface Laptop. Now
+            available with Windows 11.
+          </p>
+          <a
+            href="https://www.microsoft.com/en-in/surface/devices/surface-laptop-studio?icid=mscom_marcom_CPH2a_SurfaceLaptopStudio"
+            class="text-blue-500 hover:underline"
+            >Learn More ></a
+          >
+        </div>
+        <div class="elements flex flex-col gap-2 mx-2 my-4 md:pt-9 item-center">
+          <img class="w-80" src="images/sectionimg3.jfif" alt="sectionimg3" />
+          <h3 class="font-medium text-xl">Xbox Game Pass Ultimate</h3>
+          <p class="max-w-[350px]">
+            Get your first 8 months of membership for ₹ 699. Play on the devices
+            you own . Includes EA Play and offer available to new subscribers
+            only and cannot be combined with any other offers.
+          </p>
+          <a
+            href="https://www.microsoft.com/en-in/p/xbox-game-pass-ultimate/cfq7ttc0khs0?icid=mscom_marcom_CPH3a_GamePassUltimate"
+            class="text-blue-500 hover:underline"
+            >Join Now ></a
+          >
+        </div>
+        <div class="elements flex flex-col gap-2 mx-2 my-4 item-center">
+          <img class="w-80" src="images/sectionimg4.webp" alt="sectionimg4" />
+          <h3 class="font-medium text-xl">Microsoft Edge</h3>
+          <p class="max-w-[350px]">
+            World-class performance with more privacy, more productivity and
+            more value while you browse.
+          </p>
+          <a
+            href="https://www.microsoft.com/en-us/edge?form=MI13F3&OCID=MI13F3"
+            class="text-blue-500 hover:underline"
+            >Download Now ></a
+          >
+        </div>
+      </div>
+
+      <div
+        class="section2 bg-gray-300 flex items-center flex-col md:flex-row md:justify-between md:mx-4 md:my-4"
+      >
+        <div class="topnright w-fit md:order-2">
+          <img src="images/bigsection.webp" alt="" />
+        </div>
+        <div
+          class="bottomnleft flex flex-col items-center mt-20 md:order-1 md:ml-8"
+        >
+          <h3 class="font-medium text-2xl">Microsoft OneDrive</h3>
+          <p class="text-center w-80 md:text-base">
+            Save your files and photos to OneDrive and access them from any
+            device, anywhere
+          </p>
+          <button
+            class="text-white bg-black px-4 py-2 my-6 mx-5 text-xl font-medium"
+          >
+            Learn More >
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="section3 flex flex-col my-10 md:flex-row items-center justify-center"
+      >
+        <div
+          class="elements flex flex-col items-center gap-2 mx-2 mt-6 my-4 md:mt-16"
+        >
+          <img src="images/section3img1.png" alt="sectionimg1" />
+          <h3 class="font-medium text-xl">Surface Pro 8 for Business</h3>
+          <p class="max-w-[350px]">
+            Get unprecedented levels of performance and versatility on a 13-inch
+            screen. Discover the newest Surface for Business devices now
+            available. Available with Windows 11.
+          </p>
+          <a
+            href="https://www.microsoft.com/en-in/surface/business/surface-pro-8?icid=mscom_marcom_CPW1a_SurfacePro8Business"
+            class="text-blue-500 hover:underline"
+            >Learn More></a
+          >
+        </div>
+        <div class="elements flex flex-col items-center gap-2 mx-2 my-4">
+          <img src="images/section3img2.webp" alt="sectionimg2" />
+          <h3 class="font-medium text-xl">Windows 11 for Business is here</h3>
+          <p class="max-w-[350px]">
+            Designed for hybrid work. Powerful for employees. Consistent for IT.
+            Secure for all.
+          </p>
+          <a
+            href="https://www.microsoft.com/en-in/windows/business?icid=mscom_marcom_CPW2a_Windows11forBusiness"
+            class="text-blue-500 hover:underline"
+            >Learn More ></a
+          >
+        </div>
+        <div class="elements flex flex-col items-center gap-2 mx-2 my-4">
+          <img src="images/section3img3.webp" alt="sectionimg3" />
+          <h3 class="font-medium text-xl">Get Microsoft Teams for Free</h3>
+          <p class="max-w-[350px]">
+            Online meetings, chat and shared cloud storage – all in one place.
+          </p>
+          <a
+            href="https://www.microsoft.com/en-in/microsoft-teams/free?icid=mscom_marcom_CPW3a_MicrosoftTeams"
+            class="text-blue-500 hover:underline"
+            >Sign up for free ></a
+          >
+        </div>
+        <div
+          class="elements flex flex-col items-center gap-2 mx-2 my-4 md:mt-10"
+        >
+          <img src="images/section3img4.jfif" alt="sectionimg4" />
+          <h3 class="font-medium text-xl">Thrive in a hybrid world</h3>
+          <p class="max-w-[350px]">
+            Discover tools, resources and strategies to help your employees
+            succeed in the new world of flexible work.
+          </p>
+          <a
+            href="https://www.microsoft.com/en-in/flexibility/hybrid-work-solutions?ocid=AID3045379_QSG_57610"
+            class="text-blue-500 hover:underline"
+            >Learn More ></a
+          >
+        </div>
+      </div>
+
+      <div class="socials flex gap-3 m-8">
+        <div class="text-base font-light font-thin">Follow Microsoft</div>
+        <img src="images/facebook.svg" width="30px" alt="" />
+        <img src="images/twitter.svg" width="30px" alt="" />
+        <img src="images/youtube.svg" width="30px" alt="" />
+      </div>
+    </div>
+
+    <script>
+      let hmenu = document.getElementById("hmenu");
+      let icon = document.getElementById("icon");
+      icon.onclick = function () {
+        if (
+          hmenu.className ==
+          "hamburger hidden bg-gray-150 h-fit gap-6 md:hidden"
+        ) {
+          hmenu.className =
+            "hamburger bg-gray-150 h-fit flex flex-col gap-6 md:hidden";
+        } else if (
+          hmenu.className ==
+          "hamburger bg-gray-150 h-fit flex flex-col gap-6 md:hidden"
+        ) {
+          hmenu.className =
+            "hamburger hidden bg-gray-150 h-fit gap-6 md:hidden";
+        }
+      };
+    </script>
+  </body>
+</html>
