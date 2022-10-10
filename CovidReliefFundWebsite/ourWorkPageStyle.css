@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+    position: fixed;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    background-color: #0c2461;
+    z-index: 3;
+}
+
+.logo {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 90%;
+    width: 8rem;
+    margin-top: 5px;
+    border-radius: 50%;
+    margin-left: 23px;
+}
+
+.logo:hover {
+    box-shadow: 0 0 4px 2px #fad390;
+}
+
+.heading {
+    margin-top: 30px;
+    margin-left: 23px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+
+.heading:hover {
+    color: pink;
+}
+
+.jumbotron-options {
+    position: fixed;
+    right: 4rem;
+    display: flex;
+    margin-top: calc( 12vh / 2 );
+}
+
+.jumbotron-options div {
+    color: white;
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+.jumbotron-options div:hover {
+    color: pink;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+
+.ourWorkPage {
+    border-bottom: 3px solid blue;
+}
+
+.optionHeading {
+    height: 3rem;
+    width: 10.9rem;
+    margin: auto;
+    position: fixed;
+    top: 6.8rem;
+    left: 42.5rem;
+    font-size: 1.4rem;
+    padding-left: 23px;
+    padding-top: 9px;
+    background-color: #0c2461;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.optionHeading:hover {
+    color: pink;
+}
+
+.mainDiv {
+    height: 40rem;
+    width: 100vw;
+    position: relative;
+    top: 5.3rem; 
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+.mainDivHeading {
+    font-size: 2.5rem;
+    padding-top: 5rem;
+    margin-left: 28.8rem;
+}
+
+.mainDivHeading:hover {
+    color: rgb(201, 80, 100);
+}
+
+.pieChartDiv {
+    margin-top: calc( ( 40rem - 500px ) / 2 );
+    border-radius: 10px;
+}
+
+#chartContainer {
+    background-color: skyblue;
+    margin-left: calc( ( 100vw - 55rem ) / 2 );
+    box-shadow: 0px 0px 15px 4px purple;
+}
+
+#chartContainer:hover {
+    box-shadow: 0px 0px 15px 4px black;
+}

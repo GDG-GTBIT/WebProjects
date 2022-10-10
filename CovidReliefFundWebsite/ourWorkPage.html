@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Relief Fund</title>
+
+    <link rel="stylesheet" href="ourWorkPageStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <img src="images/Covid_Relief_Fund_Logo.jpg" class="logo" alt="Covid Relief Fund Logo">
+            <h1 class="heading">COVID RELIEF FUND</h1>
+            <div class="jumbotron-options">
+                <a href="homePage.html" class="homePage">
+                    <div class="home-Btn">HOME</div>
+                </a>
+                <a href="aboutUsPage.html" class="aboutUsPage">
+                    <div class="aboutUs-Btn">ABOUT US</div>
+                </a>
+                <a href="galleryPage.html" class="galleryPage">
+                    <div class="gallery-Btn">GALLERY</div>
+                </a>
+                <a href="ourWorkPage.html" class="ourWorkPage">
+                    <div class="ourWork-Btn">OUR WORK</div>
+                </a>
+                <a href="contactUsPage.html" class="contactUsPage">
+                    <div class="contactUs-Btn">CONTACT US</div>
+                </a>
+            </div>
+        </div>
+        <div class="optionHeading">OUR WORK</div>
+        <div class="mainDiv">
+            <h1 class="mainDivHeading">This Is How We Use Your Donations</h1>
+            <div class="pieChartDiv">
+                <script type="text/javascript">
+                    window.onload = function () {
+                      var chart = new CanvasJS.Chart("chartContainer",
+                      {
+                        title:{
+                          text: "",
+                          fontFamily: "Impact",
+                          fontWeight: "normal"
+                        },
+                  
+                        legend:{
+                          verticalAlign: "bottom",
+                          horizontalAlign: "center"
+                        },
+                        data: [
+                        {
+                          //startAngle: 45,
+                         indexLabelFontSize: 20,
+                         indexLabelFontFamily: "Garamond",
+                         indexLabelFontColor: "#0c2461",
+                         indexLabelLineColor: "#0c2461",
+                         indexLabelPlacement: "outside",
+                         type: "doughnut",
+                         showInLegend: true,
+                         dataPoints: [
+                         {  y: 40, legendText:"Food 40%", indexLabel: "Food 40%" },
+                         {  y: 20, legendText:"Health Care 20%", indexLabel: "Health Care 20%" },
+                         {  y: 25, legendText:"Education 25%", indexLabel: "Education 25%" },
+                         {  y: 15, legendText:"Jobs and Business 15%", indexLabel: "Jobs and Business 15%" }
+                         ]
+                       }
+                       ]
+                     });
+                  
+                      chart.render();
+                    }
+                    </script>
+                    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    
+                <div id="chartContainer" style="height: 350px; width: 55rem;"></div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

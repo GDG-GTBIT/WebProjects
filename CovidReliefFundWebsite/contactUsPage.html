@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Relief Fund</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+
+    <link rel="stylesheet" href="contactUsPageStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <img src="images/Covid_Relief_Fund_Logo.jpg" class="logo" alt="Covid Relief Fund Logo">
+            <h1 class="heading">COVID RELIEF FUND</h1>
+            <div class="jumbotron-options">
+                <a href="homePage.html" class="homePage">
+                    <div class="home-Btn">HOME</div>
+                </a>
+                <a href="aboutUsPage.html" class="aboutUsPage">
+                    <div class="aboutUs-Btn">ABOUT US</div>
+                </a>
+                <a href="galleryPage.html" class="galleryPage">
+                    <div class="gallery-Btn">GALLERY</div>
+                </a>
+                <a href="ourWorkPage.html" class="ourWorkPage">
+                    <div class="ourWork-Btn">OUR WORK</div>
+                </a>
+                <a href="contactUsPage.html" class="contactUsPage">
+                    <div class="contactUs-Btn">CONTACT US</div>
+                </a>
+            </div>
+        </div>
+        <div class="optionHeading">CONTACT US</div>
+        <div class="mainDiv">
+            <div class="leftDiv">
+                <h1 class="leftDivHeading">LEAVE A MESSAGE</h1>
+                <form class="form"> 
+                    <input class="name" type="text" name="Name" placeholder="Full Name">
+                    <input class="email" type="email" name="Email" placeholder="Email">
+                    <input class="mobile" type="number" name="Contact No." placeholder="Contact No.">
+                    <textarea class="message" type="text" name="Message" placeholder="Your Message" id="message"></textarea>
+                    <div class="submitBtnsDiv">
+                        <button class="submitBtn" type="button">SEND</button>
+                        <input class="resetBtn" type="reset" value="RESET">
+                    </div>
+                </form>
+            </div>
+            <div class="rightDiv">
+                <h1 class="rightDivHeading">GET IN TOUCH</h1>
+                <div class="locationDiv">
+                    <span class="material-icons locationIcon">
+                        location_on
+                    </span>
+                    <p class="locationParagraph">: WZ G-93 Tilak Nagar, New Delhi, 110018</p>
+                </div>
+
+                <div class="contactDiv">
+                    <span class="material-icons contactIcon">
+                        call
+                    </span>
+                    <p class="contactParagraph">: +91-9205146524</p>
+                </div>
+
+                <div class="emailDiv">
+                    <span class="material-icons emailIcon">
+                        email
+                    </span>
+                    <p class="emailParagraph">: taranjot11111@gmail.com</p>
+                </div>
+                <div class="socialMediaIconsDiv">
+                    <div class="socialMediaIconsUpperDiv">
+                        <a href="https://www.facebook.com/taranjot.singh.5439087/" class="fa fa-facebook facebookIcon"></a>
+                        <a href="https://twitter.com/Taranjo59873775" class="fa fa-twitter twitterIcon"></a>
+                    </div>
+                    <div class="socialMediaIconsLowerDiv">
+                        <a href="https://www.instagram.com/taranjot9229/" class="fa fa-instagram instagramIcon"></a>
+                        <a href="https://www.linkedin.com/in/taranjot-singh-bbb875202/" class="fa fa-linkedin linkedinIcon"></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+
+    <script>
+        let body=document.querySelector("body");
+        body.spellcheck=false;
+        let submitBtn=document.querySelector(".submitBtn");
+        let resetBtn=document.querySelector(".resetBtn");
+        let name=document.querySelector(".name");
+        let email=document.querySelector(".email");
+        let mobile=document.querySelector(".mobile");
+        let message=document.querySelector(".message");
+        let form=document.querySelector(".form");
+
+        resetBtn.addEventListener("click", function(e) {
+            // Swal.fire("Sent", "Message Sent Successfully!!!", "success");
+            name.value="";
+            email.value="";
+            mobile.value="";
+            message.value="";
+        });
+
+        submitBtn.addEventListener("click", function(e){
+            form.removeAttribute("action");
+            form.removeAttribute("method");
+            form.removeAttribute("enctype");
+            submitBtn.removeAttribute("type");
+            submitBtn.type="button";
+            if(name.value=="")
+            {
+                alert("Enter your Full Name.");
+                return;
+            }
+            else 
+            {
+                if(email.value=="")
+                {
+                    alert("Enter your Email ID.");
+                    return;
+                }
+                else 
+                {
+                    if(mobile.value=="")
+                    {
+                        alert("Enter your Contact Number.");
+                        return;
+                    }
+                    else 
+                    {
+                        if(message.value=="")
+                        {
+                            alert("Enter the Message you want to Send.");
+                            return;
+                        }
+                        else
+                        {
+                            submitBtn.removeAttribute("type");
+                            submitBtn.type="submit";
+                            form.action="mailto:taranjot11111@gmail.com";
+                            form.method="post";
+                            form.enctype="text/plain";
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
