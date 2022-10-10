@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    margin-left: 0;
+    padding-left: 0;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+    position: fixed;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    background-color: #0c2461;
+    z-index: 3;
+    border-radius: 0px;
+}
+
+.logo {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 310%;
+    width: 12.8rem;
+    margin-top: -35px;
+    border-radius: 50%;
+    margin-left: -37px;
+}
+
+.logo:hover {
+    box-shadow: 0 0 4px 2px #fad390;
+}
+
+.heading {
+    margin-top: -20px;
+    margin-left: 23px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+
+.heading:hover {
+    color: pink;
+}
+
+.jumbotron-options {
+    position: fixed;
+    right: 4rem;
+    display: flex;
+    margin-top: calc( 12vh / 2 );
+}
+
+.jumbotron-options div {
+    color: white;
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+.jumbotron-options div:hover {
+    color: pink;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+
+.galleryPage {
+    border-bottom: 3px solid blue;
+}
+
+.optionHeading {
+    height: 3rem;
+    width: 9.3rem;
+    margin: auto;
+    position: fixed;
+    top: 6.8rem;
+    left: 43.5rem;
+    font-size: 1.4rem;
+    padding-left: 23px;
+    padding-top: 9px;
+    background-color: #0c2461;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.optionHeading:hover {
+    color: pink;
+}
+
+body {
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+
+#myCarousel {
+    height: 39rem;
+    width: 75rem;
+    position: relative;
+    top: 22rem;
+    border-radius: 5px;
+}
+
+.mainDivHeading {
+    position: relative;
+    top: 17.8rem;
+    left: 26rem;
+    font-size: 4rem;
+    margin-left: 28.8rem;
+}
+
+.mainDivHeading:hover {
+    color: rgb(201, 80, 100);
+}

@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+    position: fixed;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    background-color: #0c2461;
+    z-index: 3;
+}
+
+.logo {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 90%;
+    width: 8rem;
+    margin-top: 5px;
+    border-radius: 50%;
+    margin-left: 23px;
+}
+
+.logo:hover {
+    box-shadow: 0 0 4px 2px #fad390;
+}
+
+.heading {
+    margin-top: 30px;
+    margin-left: 23px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+
+.heading:hover {
+    color: pink;
+}
+
+.jumbotron-options {
+    position: fixed;
+    right: 4rem;
+    display: flex;
+    margin-top: calc( 12vh / 2 );
+}
+
+.jumbotron-options div {
+    color: white;
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+.jumbotron-options div:hover {
+    color: pink;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+
+.contactUsPage {
+    border-bottom: 3px solid blue;
+}
+
+.optionHeading {
+    height: 3rem;
+    width: 12rem;
+    margin: auto;
+    position: fixed;
+    top: 6.8rem;
+    left: 42rem;
+    font-size: 1.4rem;
+    padding-left: 23px;
+    padding-top: 9px;
+    background-color: #0c2461;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.optionHeading:hover {
+    color: pink;
+}
+
+.mainDiv {
+    height: 40rem;
+    width: 100vw;
+    position: relative;
+    top: 7rem; 
+    display: flex;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+.leftDiv {
+    height: 30rem;
+    width: 35rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    border-radius: 25px;
+    background-color: darkmagenta;
+    box-shadow: 0px 0px 17px 3px darkmagenta;
+}
+
+.rightDiv {
+    height: 30rem;
+    width: 35rem;
+    margin-top: 5rem;
+    margin-left: 15rem;
+    border-radius: 25px;
+    background-color: darkmagenta;
+    box-shadow: 0px 0px 17px 3px darkmagenta;
+}
+
+.leftDivHeading {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-top: 7px;
+    padding-left: 7rem;
+}
+
+.name {
+    height: 45px;
+    width: 30rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: block;
+    margin-left: 2.5rem;
+    margin-top: 15px;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1rem;
+}
+
+.email {
+    height: 45px;
+    width: 30rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: block;
+    margin-left: 2.5rem;
+    margin-top: 18px;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1rem;
+}
+
+.mobile {
+    height: 45px;
+    width: 30rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: block;
+    margin-left: 2.5rem;
+    margin-top: 18px;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1rem;
+}
+
+.message {
+    height: 7rem;
+    width: 30rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: block;
+    margin-left: 2.5rem;
+    margin-top: 18px;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1rem;
+}
+
+.submitBtn {
+    height: 45px;
+    width: 8rem;
+    background-color: white;
+    color: darkmagenta;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: block;
+    margin-left: 8.15rem;
+    margin-top: 20px;
+    outline: none;
+    padding-top: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1rem;
+}
+
+.name:hover,.email:hover,.mobile:hover,.message:hover {
+    box-shadow: 0px 0px 15px 4px white;
+}
+
+.submitBtn:hover {
+    background-color: #0c2461;
+    color: pink;
+}
+
+::placeholder {
+    color: white;
+}
+
+#message {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+
+.rightDivHeading {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-top: 7px;
+    padding-left: 9.6rem;
+}
+
+.locationDiv {
+    display: flex;
+    margin-top: 10px;
+}
+
+.locationIcon,.contactIcon,.emailIcon {
+    color: white;
+    position: relative;
+    top: 1px;
+    left: 3rem;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.locationParagraph,.contactParagraph,.emailParagraph {
+    margin: 0;
+    padding-top: 6px;
+    margin-left: 55px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactDiv,.emailDiv {
+    display: flex;
+    margin-top: 15px;
+}
+
+.socialMediaIconsDiv {
+    height: 13rem;
+    width: 27rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+.socialMediaIconsUpperDiv {
+    height: 6.5rem;
+    width: 100%;
+}
+
+.socialMediaIconsLowerDiv {
+    height: 6.5rem;
+    width: 100%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.facebookIcon {
+    margin-top: 13px;
+    margin-left: 8rem;
+}
+
+.twitterIcon {
+    margin-top: 13px;
+    margin-left: 1rem;
+}
+
+.instagramIcon {
+    margin-top: 5px;
+    margin-left: 8rem;
+}
+
+.linkedinIcon {
+    margin-top: 5px;
+    margin-left: 1rem;
+}
+
+.rightDivHeading:hover,.leftDivHeading:hover {
+    color: #4b71d3;
+}
+
+.submitBtnsDiv {
+    display: flex;
+}
+
+.resetBtn {
+    height: 45px;
+    width: 8rem;
+    background-color: white;
+    color: darkmagenta;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: block;
+    margin-left: 2rem;
+    margin-top: 20px;
+    outline: none;
+    padding-top: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1rem;
+}
+
+.resetBtn:hover {
+    background-color: #0c2461;
+    color: pink;
+}
+
+
+
+  

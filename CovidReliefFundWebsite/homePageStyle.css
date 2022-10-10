@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+    position: fixed;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    background-color: #0c2461;
+    z-index: 3;
+}
+
+.logo {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 90%;
+    width: 8rem;
+    margin-top: 5px;
+    border-radius: 50%;
+    margin-left: 23px;
+}
+
+.logo:hover {
+    box-shadow: 0 0 4px 2px #fad390;
+}
+
+.heading {
+    margin-top: 30px;
+    margin-left: 23px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+
+.heading:hover {
+    color: pink;
+}
+
+.jumbotron-options {
+    position: fixed;
+    right: 4rem;
+    display: flex;
+    margin-top: calc( 12vh / 2 );
+}
+
+.jumbotron-options div {
+    color: white;
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+.jumbotron-options div:hover {
+    color: pink;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+
+.homePage {
+    border-bottom: 3px solid blue;
+}
+
+.optionHeading {
+    height: 3rem;
+    width: 7rem;
+    margin: auto;
+    position: fixed;
+    top: 6.5rem; 
+    left: 44.4rem;
+    font-size: 1.4rem;
+    padding-left: 23px;
+    padding-top: 9px;
+    background-color: #0c2461;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.optionHeading:hover {
+    color: pink;
+}
+
+.mainDivs {
+    position: relative;
+    top: 6.8rem;
+    display: flex;
+}
+
+.HomePageImage {
+    height: 44rem;
+    width: 48rem;
+    position: relative;
+    top: -2rem;
+    border-right: 3px solid wheat;
+}
+
+.donateDiv {
+    height: 42.25rem;
+    width: 48rem;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    margin-top: -4px;
+}
+
+.quote1 {
+    padding-top: 4rem;
+    padding-bottom: 25px;
+    margin-left: 20px;
+    color: #0c2461;
+    font-size: 35px;
+    font-style: italic;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.quote2 {
+    padding-bottom: 25px;
+    margin-left: 20px;
+    color: #0c2461;
+    font-size: 35px;
+    font-style: italic;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.quote3 {
+    padding-bottom: 25px;
+    margin-left: 20px;
+    color: #0c2461;
+    font-size: 35px;
+    font-style: italic;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.donateBtn {
+    height: 60px;
+    width: 150px;
+    position: relative;
+    right: -310px;
+    border-radius: 15px;
+    color: white;
+    background-color: #0c2461;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0px 0px 15px 4px white;
+}
+
+.donateBtn:hover {
+    color: pink;
+    box-shadow: 0px 0px 20px 10px white;
+}
+
+.copyrightDiv {
+    position: relative;
+    top: 4.8rem;
+    border-top: 1px solid white;
+    height: 10rem;
+    width: 100vw;
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+
+.copyrightHeading {
+    margin-top: 0;
+    display: inline-block;
+    padding-top: 13px;
+}
+
+.copyrightDesc {
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 30px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.copyrightIcon {
+    display: inline-block;
+    margin-left: 17.4rem;
+}
+
+.razorpayImg {
+    position: relative;
+    top: 55px;
+    left: 10.9rem;
+    height: 1.5rem;
+    width: 7rem;
+}
+
+.quote1:hover,.quote2:hover,.quote3:hover {
+    color: white;
+}
+

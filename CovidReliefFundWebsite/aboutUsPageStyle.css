@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+    position: fixed;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    background-color: #0c2461;
+    z-index: 3;
+}
+
+.logo {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 90%;
+    width: 8rem;
+    margin-top: 5px;
+    border-radius: 50%;
+    margin-left: 23px;
+}
+
+.logo:hover {
+    box-shadow: 0 0 4px 2px #fad390;
+}
+
+.heading {
+    margin-top: 30px;
+    margin-left: 23px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+
+.heading:hover {
+    color: pink;
+}
+
+.jumbotron-options {
+    position: fixed;
+    right: 4rem;
+    display: flex;
+    margin-top: calc( 12vh / 2 );
+}
+
+.jumbotron-options div {
+    color: white;
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+.jumbotron-options div:hover {
+    color: pink;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+
+.aboutUsPage {
+    border-bottom: 3px solid blue;
+}
+
+.optionHeading {
+    height: 3rem;
+    width: 10rem;
+    margin: auto;
+    position: fixed;
+    top: 6.5rem;
+    left: 43rem;
+    font-size: 1.4rem;
+    padding-left: 23px;
+    padding-top: 9px;
+    background-color: #0c2461;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.optionHeading:hover {
+    color: pink;
+}
+
+.mainDiv {
+    height: 40.6rem;
+    width: 100vw;
+    position: relative;
+    top: 6.5rem; 
+    background: #EECDA3;  
+    background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  
+    background: linear-gradient(to right, #EF629F, #EECDA3); 
+}
+
+.upperMainDiv {
+    height: 20rem;
+    width: 100vw;
+    display: flex;
+}
+
+.lowerMainDiv {
+    height: 20rem;
+    width: 100vw;
+    display: flex;
+}
+
+.foodDiv {
+    height: 17rem;
+    width: 25%;
+    margin-right: 18rem;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #60a3bc;
+    box-shadow: 0px 0px 17px 3px white;
+}
+
+.healthCareDiv {
+    height: 17rem;
+    width: 25%;
+    margin-top: 2rem;
+    margin-left: 9.8rem;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #D980FA;
+    box-shadow: 0px 0px 17px 3px white;
+}
+
+.educationDiv {
+    height: 17rem;
+    width: 25%;
+    margin-right: 18rem;
+    margin-top: 1.5rem;
+    margin-left: 10rem;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #fdcb6e;
+    box-shadow: 0px 0px 17px 3px white;
+}
+
+.jobDiv {
+    height: 17rem;
+    width: 25%;
+    margin-top: 1.5rem;
+    margin-left: 9.8rem;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #55efc4;
+    box-shadow: 0px 0px 17px 3px white;
+}
+
+.circleDiv {
+    height: 4.8rem;
+    width: 5rem;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: 25px;
+    left: calc( ( 100% - 5rem ) / 2 );
+}
+
+.foodIcon {
+    font-size: 3.6rem;
+    position: relative;
+    top: 5px;
+    left: 11.5px;
+}
+
+.workCardHeadingFood {
+    margin-top: 34px;
+    padding-left: 9.5rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.workCardDescFood {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+.healthIcon,.educationIcon {
+    font-size: 3.6rem;
+    position: relative;
+    top: 9px;
+    left: 11.5px;
+}
+
+.workCardHeadingHealth {
+    margin-top: 34px;
+    padding-left: 6.8rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.workCardDescHealth,.workCardDescEducation,.workCardDescJob {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
+
+.workCardHeadingEducation {
+    margin-top: 34px;
+    padding-left: 7.6rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.jobIcon {
+    font-size: 3.2rem;
+    position: relative;
+    top: 12px;
+    left: 14.2px;
+}
+
+.workCardHeadingJob {
+    margin-top: 34px;
+    padding-left: 4rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.foodDiv:hover,.healthCareDiv:hover,.educationDiv:hover,.jobDiv:hover {
+    background-color: white;
+}
+
+
+
