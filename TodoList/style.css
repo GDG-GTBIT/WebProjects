@@ -1,0 +1,116 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: darkgoldenrod;
+}
+
+.form{
+  position: absolute;
+  top: 30%;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+  width: 400px;
+  /* background-color: pink; */
+  border-radius: 10px;
+}
+
+.input{
+  width : 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  font-size: cursive;
+
+}
+
+.input::placeholder{
+  color: lightblue;
+  transition-duration:1s ;
+}
+
+
+.list{
+  padding:0;
+  margin: 0;
+}
+
+.list li{
+  list-style-type:none;
+  padding: 20px;
+  font-family:cursive;
+  border-top:dotted;
+  border-color: darkgray;
+  background-color: rgb(234, 192, 240);
+  position: relative;
+  transition-duration: 1.5s;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+
+.list li:hover{
+  transform: scale(1.05);
+  transition-duration: 1.5s;
+  border-color: black;
+  border:currentColor;
+  border-radius: 20px;
+}
+
+.list li .fa-trash-can{
+  color:red;
+  position: absolute;
+  right: 10px;
+  top:50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.list li .fa-square-check{
+  color:green;
+  position: absolute;
+  right: 40px;
+  top:50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition-duration: 0.8s;
+}
+
+.list li.checked{
+  color:darkgray;
+  text-decoration: line-through;
+}
+
+.list li.checked .fa-square-check{
+  color:darkgray;
+  text-decoration: line-through;
+}
+
+
+.heading{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  transition-duration: 7s;
+  transition-delay: 5s;
+  animation: 
+    typing 4s steps(50, end),
+    blink-caret .75s step-end;
+  text-align: center;
+  background-color: pink;
+  height: 80px;
+  border-style: unset;
+  border-radius: 25px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
