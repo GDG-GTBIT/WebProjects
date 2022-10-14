@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+
+
+</head>
+
+<body>
+  <div id="result">
+    <!--Position information will be inserted here-->
+  </div>
+  <button type="button" onclick="ne();">Show Position</button>
+  <script type="text/javascript">
+    async function ne() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(async (position)=> {
+          var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
+          console.log(positionInfo)
+          const data = await fetch("http://www.mapquestapi.com/geocoding/v1/reverse?key=VPN8i8JY5HUv0GrKGGEsmpOpD4AFxq0n&location="+position.coords.latitude+","+position.coords.longitude+"&includeRoadMetadata=true&includeNearestIntersection=true")
+          const resp = await data.json()
+          console.log(resp)
+        });
+        
+      } else {
+        alert("Sorry, your browser does not support HTML5 geolocation.");
+      }
+    }
+    ne();
+
+  </script>
+</body>
+
+</html>
