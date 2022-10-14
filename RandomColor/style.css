@@ -1,0 +1,63 @@
+body{
+  margin: 0;
+  font-family: cursive;
+  background-color: salmon;
+}
+
+h1{
+  margin:20px;
+  text-align: center;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  transition-duration: 5s;
+  transition-delay: 5s;
+  animation: 
+    typing 3.5s steps(50, end),
+    blink-caret .75s step-end;
+}
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+.container{
+  margin:20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-container{
+  background-color: orange;
+  width: 300px;
+  height: 150px;
+  color: white;
+  margin:5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  text-shadow: 2px 4px 8px rgba(0,0,0,0.5);
+  border: solid black;
+  border-radius: 10px;
+}
+
+.color-container:hover{
+  transform: scale(1.05);
+  transition-duration: 0.8s;
+}
+.color-container.active{
+  transition-duration: 0s;
+  border: dashed grey;
+}
