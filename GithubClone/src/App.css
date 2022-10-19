@@ -1,0 +1,55 @@
+.App {
+  background-color: #252525;
+  min-height: 100vh;
+}
+
+.homepageContainer {
+  width: 40%;
+  margin: auto;
+  min-height: 20vh;
+  color: white;
+}
+
+.searchCardContainer {
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 3px;
+  margin: 1rem 0;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  background-color: var(--p-border-critical);
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.topSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+
+.topSection button {
+  cursor: pointer;
+  background-color: var(--p-action-primary);
+  color: var(--p-action-secondary);
+  border: none;
+  padding: 5px 10px;
+}
+
+.followDetails {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
