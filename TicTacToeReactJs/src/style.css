@@ -1,0 +1,14 @@
+body{
+    background-color: #5cdb95;
+}
+.button{
+    background-color: #05386b;
+}
+.button:hover{
+    background-color: #379683;
+}
+.footer{
+     text-align: center;
+     font-weight: 600;
+     margin-top: 20px;
+}
