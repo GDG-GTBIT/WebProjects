@@ -6,7 +6,6 @@ const j=document.getElementById("j");
 const k=document.getElementById("k");
 const l=document.getElementById("l");
 
-
 w.addEventListener("click",()=>{
     // console.log(1);
     var sound1 = new Audio("Sound/snare.mp3");
